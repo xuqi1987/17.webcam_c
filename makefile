@@ -1,7 +1,7 @@
 all: webcam_server webcam_shower
 
 CXXFLAGS=	-c -g -O0 -fPIC
-
+CXX = g++
 OBJS_SERVER=	capture.o vcompress.o sender.o server.o
 OBJS_SHOWER= 	vshow.o recver.o shower.o
 LIBS_SERVER=	-lavcodec -lswscale -lavutil -lx264 -lpthread
